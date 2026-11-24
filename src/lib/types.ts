@@ -130,9 +130,9 @@ export interface AuthStatusResponse {
   /** 当前会话是否已验证 */
   verified: boolean;
   version: string;
-  /** 部署者通过 DEFAULT_SOURCES 环境变量预置的采集站（未配置时为空数组） */
+  /** 部署者通过 DEFAULT_SOURCES 环境变量预置的采集站（未配置时回退到内置默认源） */
   defaultSources: SourceConfig[];
-  /** 部署者通过 DEFAULT_LIVE_SOURCES 环境变量预置的直播源（未配置时为空数组） */
+  /** 部署者通过 DEFAULT_LIVE_SOURCES 环境变量预置的直播源（未配置时回退到内置默认直播源） */
   defaultLiveSources: LiveSourceConfig[];
   /** 部署者通过 DEFAULT_SUBSCRIPTIONS 环境变量预置的 SourceList 订阅链接（未配置时为空数组） */
   defaultSubscriptions: { url: string; name?: string; refreshDays?: number }[];

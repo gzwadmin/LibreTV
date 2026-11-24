@@ -1,0 +1,29 @@
+{
+  "name": "LibreTV-SourceList",
+  "version": 2,
+  "exportedAt": 1795511869565,
+  "sources": [
+    {
+      "name": "无极资源",
+      "url": "https://api.wujinapi.com/api.php/provide/vod",
+      "isAdult": false
+    },
+    {
+      "name": "BDZY资源",
+      "url": "https://api.apibdzy.com/api.php/provide/vod",
+      "isAdult": false
+    },
+    {
+      "name": "FFZY资源",
+      "url": "https://api.ffzyapi.com/api.php/provide/vod",
+      "isAdult": false
+    }
+  ],
+  "liveSources": [
+    {
+      "name": "IPTV4-345台",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "epg": "http://epg.51zmt.top:8000/e.xml"
+    }
+  ]
+}
